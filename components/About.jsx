@@ -59,8 +59,8 @@ const About = () => {
           I value collaborative work and strive for clear communication, actively promoting well-documented code.
           <br /><br />
           I am open to discussing potential projects or collaboration opportunities and seeking mentorship from experienced software development professionals.
-          If you're willing to share your
-          knowledge, I'd love to connect!
+          If you are willing to share your
+          knowledge, I would love to connect!
         </p>
       </motion.div>
       <hr />
