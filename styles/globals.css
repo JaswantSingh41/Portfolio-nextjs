@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 
+  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
+*/
+
+body {
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+  
+  
+}
+.main:after {
+  content: "";
+  background-image: url('/assets/images/herobg.png');
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  filter: invert(1);
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    padding: 0;
+  }
+}
+
+/* Tailwind Styles */
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+
+.black_btn {
+  @apply rounded-full border border-white bg-white p-3 text-black transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+}
+
+.outline_btn {
+  @apply rounded-full border border-transparent bg-transparent py-1.5 px-5 text-white transition-all hover:bg-gray-500 hover:opacity-90 hover:text-white text-center text-sm font-inter flex items-center justify-center;
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.green_gradient {
+  @apply bg-gradient-to-r from-green-500 to-green-600 bg-clip-text text-transparent;
+}
+
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-500 to-cyan-600 bg-clip-text text-transparent;
+}
+.pink_gradient {
+  @apply bg-gradient-to-r from-pink-500 to-orange-600 bg-clip-text text-transparent;
+}
+.cyan_gradient {
+  @apply bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent;
+}
+.purple_gradient {
+  @apply bg-gradient-to-r from-purple-700 to-purple-500 bg-clip-text text-transparent;
+}
+.red_gradient {
+  @apply bg-gradient-to-r from-red-700 to-red-600 bg-clip-text text-transparent;
+}
+.gray_gradient {
+  @apply bg-gradient-to-r from-gray-700 to-gray-500 bg-clip-text text-transparent;
+}
+.red_pink_gradient{
+  @apply bg-gradient-to-tr from-red-500 to-pink-500 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+}
+
+.search_input {
+  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
+}
+
+.copy_btn {
+  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+}
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+}
+
+.prompt_layout {
+  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+}
+
+/* Feed Component */
+.feed {
+  @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
+}
+
+/* Form Component */
+.form_textarea {
+  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+.form_input {
+  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+/* Nav Component */
+.logo_text {
+  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+}
+.nav_text {
+  @apply max-sm:hidden font-satoshi font-semibold text-sm tracking-wide text-gray-600;
+}
+
+.dropdown {
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-center items-center;
+}
+
+.dropdown_link {
+  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
+}
+
+/* PromptCard Component */
+/* .project_card {
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter;
+}
+*/
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+.footer-icon{
+  width: 20px;
+  height: 20px;
+}
+.skills-container::-webkit-scrollbar {
+  width: 4px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+}
+::-webkit-scrollbar-thumb {
+  background: slategray; /* color of the thumb */
+  border-radius: 4px; /* roundness of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: teal; /* color of the thumb on hover */
+}
+#skills-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+#skills-container::-webkit-scrollbar-thumb {
+  background-color: lightseagreen; /* Color of the thumb */
+  border-radius: 4px ; /* Radius of the thumb */
+  height: 3px;
+}
+
+#skills-container::-webkit-scrollbar-thumb:hover {
+  background-color: lightseagreen; /* Color of the thumb on hover */
+}
+#skills-container::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+#skills-container::-webkit-scrollbar-track {
+  background-color: transparent; /* Color of the track */
+}
+
+.experiencesSection {
+  padding: 6rem 2rem;
+  font-family: sans-serif;
+}
+
+.experiencesSection h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.experiencesContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.experienceItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.experienceItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 4px;
+  height: 0;
+  background-color: #FC6D6D;
+  transition: height 0.5s ease, top 0.5s ease;
+}
+
+.experienceItem:hover::before {
+  height: 100%;
+  top: 0;
+}
+
+.logoContainer {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.experienceItem:hover .logoContainer {
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.content h3 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+   
+}
+
+.content h4 {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.period {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.description {
+  font-family: 'Robot Mono';
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill {
+  background-color: rgba(252, 109, 109, 0.1);
+  color: lightgreen;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background-color: #FC6D6D;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .experienceItem {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  .logoContainer {
+    margin-bottom: 1rem;
+  }
+}
+
