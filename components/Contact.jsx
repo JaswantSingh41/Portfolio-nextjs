@@ -13,8 +13,8 @@ const Contact = () => {
         </h2>
         <div>
           <p className="desc text-justify mb-4 md:mr-5 ">
-            I&apos;m currently looking for new opportunities my inbox is always
-            open. Whether you have a question or just want to say hi, I&apos;ll
+            I'm currently looking for new opportunities my inbox is always
+            open. Whether you have a question or just want to say hi, I'll
             try my best to get back to you!
           </p>
           <div className="flex flex-row gap-4">

@@ -14,7 +14,7 @@ const Skills = () => {
     if (isInView) {
       controls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, controls]);
   return (
     <section ref={ref} id="Skills" className="w-full flex-col flex-center mt-10 items-center">
       <div className="max-w-7xl">

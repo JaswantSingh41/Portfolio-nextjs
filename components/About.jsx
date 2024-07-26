@@ -11,7 +11,7 @@ const About = () => {
     if (isInView) {
       controls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, controls]);
 
   return (
     <section
