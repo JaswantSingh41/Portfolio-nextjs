@@ -1,4 +1,5 @@
 import int2 from "../public/assets/images/headstater.jpeg"
+import Image from "next/image";
 const Experiences = () => {
     const experiences = [
       {
@@ -18,7 +19,7 @@ const Experiences = () => {
           {experiences.map((exp, index) => (
             <div key={index} className="experienceItem">
               <div className="logoContainer">
-                <img src={exp.logo} alt={`${exp.company} logo`} className="logo" />
+                <Image src={exp.logo} alt={`${exp.company} logo`} className="logo" />
               </div>
               <div className="content">
                 <h3 className="red_gradient">{exp.title}</h3>

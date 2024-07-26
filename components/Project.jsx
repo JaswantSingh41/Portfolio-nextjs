@@ -27,7 +27,7 @@ const Project = () => {
     if (isInView) {
       controls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView,controls]);
 
   const fadeInAnimationsVariants = {
     initial: { opacity: 0, y: 100 },

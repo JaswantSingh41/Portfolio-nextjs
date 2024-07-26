@@ -9,12 +9,12 @@ const Contact = () => {
       className="grid md:grid-cols-2 my-6 py-14 gap-4 animate-fade-in-up">
       <div>
         <h2 className="head_text text-center sm:text-left mb-5  ">
-          <span className="red_gradient">Let's Connect</span>
+          <span className="red_gradient">Lets Connect</span>
         </h2>
         <div>
           <p className="desc text-justify mb-4 md:mr-5 ">
-            I'm currently looking for new opportunities my inbox is always
-            open. Whether you have a question or just want to say hi, I'll
+            I am currently looking for new opportunities my inbox is always
+            open. Whether you have a question or just want to say hi, I wll
             try my best to get back to you!
           </p>
           <div className="flex flex-row gap-4">

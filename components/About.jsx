@@ -52,13 +52,13 @@ const About = () => {
           <span className="red_gradient">About Me</span>
         </h2>
         <p className="desc text-justify animate-slide-up-fade sm:ml-3">
-          Hey there! 👋 I'm Jaswant Singh, a dedicated <span className="pink_gradient">Full-stack developer</span> with a passion for building innovative web applications. I specialize in <span className="pink_gradient">Node.js, React, JavaScript, TypeScript, Next.js</span>, and I'm eager to leverage my skills in a dynamic team.
+          Hey there! 👋 I am Jaswant Singh, a dedicated <span className="pink_gradient">Full-stack developer</span> with a passion for building innovative web applications. I specialize in <span className="pink_gradient">Node.js, React, JavaScript, TypeScript, Next.js</span>, and I am eager to leverage my skills in a dynamic team.
           <br /><br />
-          Currently, I'm an SWE Fellow at <span className="pink_gradient">HeadstarterAI</span>HeadstarterAI and an engineering college dropout. I continuously enhance my problem-solving skills through solving data structures and algorithm challenges.
+          Currently, I am an SWE Fellow at <span className="pink_gradient">HeadstarterAI</span>HeadstarterAI and an engineering college dropout. I continuously enhance my problem-solving skills through solving data structures and algorithm challenges.
           <br /><br />
           I value collaborative work and strive for clear communication, actively promoting well-documented code.
           <br /><br />
-          I'm open to discussing potential projects or collaboration opportunities and seeking mentorship from experienced software development professionals.
+          I am open to discussing potential projects or collaboration opportunities and seeking mentorship from experienced software development professionals.
           If you're willing to share your
           knowledge, I'd love to connect!
         </p>
