@@ -166,7 +166,7 @@ export const navLinks = [
   },
 
   {
-    href: "https://drive.google.com/file/d/1VjZWf0N40WRQE30AfHupcwWXbje7SVmY/view?usp=sharing ",
+    href: "https://drive.google.com/file/d/1uu9PjcBK3iQwkzSgx74KCGImn658ASo7/view?usp=sharing ",
     text: "Resume",
     rel: "noopener noreferrer",
     target: "_blank",
